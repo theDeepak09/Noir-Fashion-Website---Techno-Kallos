@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #302f2f;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Billing Section */
+.billing-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #000000;
+}
+
+.billing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Billing Form */
+.billing-form {
+    flex: 1 1 60%;
+    padding: 20px;
+}
+
+.billing-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #444;
+}
+
+/* Order Summary */
+.order-summary {
+    flex: 1 1 35%;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    color:white;
+}
+
+.order-summary h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.summary-item.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .billing-container {
+        flex-direction: column;
+    }
+
+    .form-group-inline {
+        flex-direction: column;
+    }
+}
